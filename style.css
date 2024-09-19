@@ -25,19 +25,19 @@
 .congrats h1{
     z-index: 10;
     background-image: linear-gradient(to bottom, rgba(169, 221, 221, 0.6), #E5CDB5);
-    padding: 20px;
+    padding: 30px;
     color: black;
     width: 50%;
-    margin: 10% 30%;
+    margin: 10% 25%;
 }
-.animated-text {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
+ .animated-text {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
 .animated-text span {
     opacity: 0; /* Start hidden */
     animation: fadeIn 0.5s forwards; /* Animation properties */
+    margin-right: 0.2em;
 }
 
 @keyframes fadeIn {
@@ -71,3 +71,12 @@
 .animated-text span:nth-child(17) { animation-delay: 8s; }
 .animated-text span:nth-child(18) { animation-delay: 8.5s; }
 .animated-text span:nth-child(19) { animation-delay: 9s; }
+.animated-text span:nth-child(20) { animation-delay: 9.5s; }
+.animated-text span:nth-child(21) { animation-delay: 10s; }
+.animated-text span:nth-child(22) { animation-delay: 10.5s; }
+.animated-text span:nth-child(23) { animation-delay: 11s; }
+.animated-text span:nth-child(24) { animation-delay: 11.5s; }
+.animated-text span:nth-child(25) { animation-delay: 12s; }
+.animated-text span:nth-child(26) { animation-delay: 12.5s; }
+.animated-text span:nth-child(27) { animation-delay: 13s; }
+.animated-text span:nth-child(28) { animation-delay: 13.5s; }
