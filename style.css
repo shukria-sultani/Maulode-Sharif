@@ -9,6 +9,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden; /* Hide overflow if necessary */
+    
 }
 
 .background-image {
@@ -22,6 +23,11 @@
     transform: translate(-50%, -25%);
     z-index: -1;
 }
+@media (max-width: 1024px) { 
+    .background-image {
+        transform: translate(-50%, -50%); 
+    }
+}
 .congrats h1{
     z-index: 10;
     background-image: linear-gradient(to bottom, rgba(169, 221, 221, 0.6), #E5CDB5);
@@ -29,25 +35,33 @@
     color: black;
     width: 50%;
     margin: 10% 25%;
+    font-weight: 500;
+}
+@media (max-width: 1024px) { 
+    .congrats h1{
+        margin: 50% 20px;
+        margin-right: 20px;
+        width: 80%;
+    }
 }
  .animated-text {
         display: inline-flex;
         flex-wrap: wrap;
     }
 .animated-text span {
-    opacity: 0; /* Start hidden */
-    animation: fadeIn 0.5s forwards; /* Animation properties */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; 
     margin-right: 0.2em;
 }
 
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Start hidden */
-        transform: translateY(20px); /* Optional: slight upward movement */
+        opacity: 0; 
+        transform: translateX(20px); 
     }
     100% {
-        opacity: 1; /* Fully visible */
-        transform: translateY(0); /* Return to original position */
+        opacity: 1; 
+        transform: translateX(0);
     }
 }
 
@@ -80,3 +94,32 @@
 .animated-text span:nth-child(26) { animation-delay: 12.5s; }
 .animated-text span:nth-child(27) { animation-delay: 13s; }
 .animated-text span:nth-child(28) { animation-delay: 13.5s; }
+/* gallary */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Optional: Limit max width */
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+     margin-top: 10px;
+     margin-right: 20px;
+
+}
+
+.gallary {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+}
+
+.gallary img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+ h2{
+    text-align: center;
+    margin-top: 60px;
+ }
