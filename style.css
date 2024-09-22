@@ -256,3 +256,11 @@
             left: 10px;
          }
 }
+.lastSection{
+    background-color: rgba(35, 168, 168, 0.6);
+    color: #E5CDB5; 
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
