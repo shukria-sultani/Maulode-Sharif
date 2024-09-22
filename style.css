@@ -102,8 +102,8 @@
     justify-content: center;
     display: flex;
     align-items: center;
-     margin-top: 10px;
-     margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
 
 }
 
@@ -123,3 +123,136 @@
     text-align: center;
     margin-top: 60px;
  }
+ h3{
+    text-align: center;
+    margin-top: 30px;
+ }
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container2 {
+    padding: 10px 50px ;
+    position: relative;
+    width: 40%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+     0%{
+        opacity: 1;
+        transform: translateY(-30px);
+     }
+     100%{
+        opacity: 1;
+        transform: translateY(0px);
+     }
+}
+
+.container2:nth-child(2){
+    animation-delay: 1s;
+}
+.container2:nth-child(3){
+    animation-delay: 2s;
+}
+.container2:nth-child(4){
+    animation-delay: 3s;
+}
+.container2:nth-child(5){
+    animation-delay: 4s;
+}
+.container2:nth-child(6){
+    animation-delay: 5s;
+}
+.container2:nth-child(7){
+    animation-delay: 6s;
+}
+.container2:nth-child(8){
+    animation-delay: 7s;
+}
+.container2:nth-child(9){
+    animation-delay: 8s;
+}
+.container2:nth-child(10){
+    animation-delay: 9s;
+}
+
+.textBox{
+    padding: 20px 30px;
+    background-color: #E5CDB5;
+    position: relative;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.textBox p{
+    padding-top: 10px;
+}
+.left-container{
+    left: 10%;
+}
+.right-container{
+    left: 45%;
+}
+.container2 span{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 20px;
+    top: 32px;
+    text-align: center;
+    z-index:10 ;
+    background-color: rgba(35, 168, 168, 0.6);
+    color: #fff;
+}
+.right-container span{
+    left: 20px;
+}
+.timeline::after{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    top: 0;
+    left:50%;
+    background: #000;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0%{
+      height: 0;
+    }
+    100%{
+     height: 100%;
+    }
+}
+
+
+@media screen and (max-width:600px){
+         .timeline{
+            margin: 50px auto;
+         }
+         .timeline::after{
+            left: 31px;
+         }
+         .container2{
+            width: 80%;
+            padding-left: 80px;
+            padding-left: 25px;
+         }
+         .textBox{
+            font-size: 13px;
+         }
+         .right-container{
+            left: 15px;
+         }
+         .left-container{
+            left: 15px;
+         } 
+         .right-container span,  .left-container span{
+            left: 10px;
+         }
+}
